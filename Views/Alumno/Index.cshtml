@@ -1,6 +1,6 @@
 ﻿@model Alumno
 @{
-    ViewData["Title"] = "Información asignatura";
+    ViewData["Title"] = "Información de alumno";
     Layout="Simple";
 }
 <h1>@ViewData["Title"] </h1>
@@ -8,7 +8,7 @@
 <strong>Desde la vista normal</strong>
     <p>
         Nombre: @Model.Nombre<br/>
-        Id: @Model.UniqueId
+        Id: @Model.Id
     </p>
 
 <strong>Desde la vista parcial</strong>
