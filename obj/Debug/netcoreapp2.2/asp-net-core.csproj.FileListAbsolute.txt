@@ -35,3 +35,4 @@ d:\platzi\asp-net-core\asp-net-core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatu
 d:\platzi\asp-net-core\asp-net-core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ObjetoEscuelaSimple.g.cshtml.cs
 d:\platzi\asp-net-core\asp-net-core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Index.g.cshtml.cs
 d:\platzi\asp-net-core\asp-net-core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\MultiAlumno.g.cshtml.cs
+d:\platzi\asp-net-core\asp-net-core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ListaObjetosEscuela.g.cshtml.cs
