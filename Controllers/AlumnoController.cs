@@ -8,9 +8,22 @@ namespace asp_net_core.Controllers
 {
     public class AlumnoController: Controller
     {
-        public IActionResult Index()
+        [Route("Alumno/Index")]
+        [Route("Alumno/Index/{alumnoId}")]
+        public IActionResult Index(string alumnoId)
         {
-            return View(_context.Alumnos.FirstOrDefault());
+            if (!string.IsNullOrWhiteSpace(alumnoId))
+            {
+                var alumno= from alum in _context.Alumnos
+                            where alum.Id == alumnoId
+                            select alum;
+
+                return View(alumno.SingleOrDefault()); 
+            }else
+            {
+                return View("MultiAlumno",_context.Alumnos);
+            }
+            
         }
         public IActionResult MultiAlumno()
         {
