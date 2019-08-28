@@ -38,6 +38,10 @@ namespace asp_net_core
             services.AddDbContext<EscuelaContext>(
                 options =>options.UseInMemoryDatabase(databaseName:"testDb")
             );
+
+            //Conexión SqlServer
+            //string connString= ConfigurationExtensions.GetConnectionString(this.Configuration,"DefaultConnection");
+            //services.AddDbContext<EscuelaContext>(options =>options.UseSqlServer(connString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
